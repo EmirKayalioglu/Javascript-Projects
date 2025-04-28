@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --prim-color: #00FFC4;
+    --black-color: rgb(0, 0, 0);
+    --white-color: rgb(255, 255, 255);
+    --todo-bg: #15151f;
+    --todo-bg2: #0a0b0f;
+    --secondary-color: #4A4D57;
+}
+
+body{
+    background-color: var(--todo-bg);
+}
+
+body h1{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--prim-color);
+}
+
+.todo_app{
+    width: 50%;
+    margin: 0 auto;
+    height: auto;
+    background-color: var(--todo-bg);
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+
+.input_box{
+    position: relative;
+    margin-left: 50px;
+}
+
+.input_box input{
+    width: 500px;
+    height: 40px;
+    outline: none;
+    border: 1px solid var(--secondary-color);
+    border-radius: 20px;
+    padding-left: 20px;
+    background-color: transparent;
+    color: var(--white-color);
+}
+
+.input_box button{
+    position: absolute;
+    right: 12.7%;
+    height: 40px;
+    padding: 0 20px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    margin-left: 20px;
+    background-color: var(--prim-color);
+    color: var(--white-color);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+.input_box button:hover{
+    background-color: transparent;
+    border: 1px solid var(--prim-color);
+    box-shadow: 0 0 10px var(--prim-color);
+}
